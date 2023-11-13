@@ -1,0 +1,68 @@
+<mvc:View controllerName="contactos.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+
+
+	<Table
+		id="contactList"
+		class="sapUiResponsiveMargin"
+		width="auto"
+		items="{users>/users}">
+		<headerToolbar>
+			<Toolbar id="_IDGenToolbar1">
+				<Title id="_IDGenTitle1" text="Contactos" />
+				<ToolbarSpacer id="_IDGenToolbarSpacer1" />
+				<SearchField id="_IDGenSearchField1"
+					width="50%"
+					search=".onFilter"/>
+			</Toolbar>
+		</headerToolbar>
+		<columns>
+			<Column id="_IDGenColumn0">
+				<Text id="_IDGenText0" text="" />
+			</Column>
+			<Column id="_IDGenColumn1">
+				<Text id="_IDGenText1" text="Nombre" />
+			</Column>
+			<Column id="_IDGenColumn2">
+				<Text id="_IDGenText2" text="Dirección" />
+			</Column>
+			<Column id="_IDGenColumn3">
+				<Text id="_IDGenText3" text="Teléfono" />
+			</Column>
+			<Column id="_IDGenColumn4">
+				<Text id="_IDGenText4" text="Ciudad" />
+			</Column>
+			<Column id="_IDGenColumn5" hAlign="End">
+				<Text id="_IDGenText5" text="Email" />
+			</Column>
+			<Column id="_IDGenColumn6" hAlign="End">
+				<Text id="_IDGenText6" text="Trabajo" />
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem id="_IDGenColumnListItem1"
+				type="Navigation"
+				press="">
+				<cells>
+					<Avatar id="_IDGenAvatar1"
+							src="{users>profile_picture}"
+							displaySize="M"
+							displayShape="Circle"
+							showBorder="true"
+							press="onPress"/>
+					<Text id="_IDGenText11" text="{users>first_name} {users>last_name}" />
+					<Text id="_IDGenText22" text="{users>street}" />
+					<Text id="_IDGenText33" text="{users>phone}" />
+					<Text id="_IDGenText44" text="{users>city}" />
+					<Text id="_IDGenText55" text="{users>email}" />
+					<Text id="_IDGenText66" text="{users>job}" />
+	
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+	
+    </Page>
+</mvc:View>
