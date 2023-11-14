@@ -1,6 +1,6 @@
 Ejercicio práctico: Listado de Contactos
 En este documento se mostrarán los pasos que se siguieron para crear la siguiente tabla en SAP Fiori, utilizando componentes de UI5 y haciendo llamado de servicios oData y REST API
- 
+![Screenshot](imagenes/contactos.png)
 Luego de crear el proyecto de Fiori en el Business Application Studio se encontraran dentro de la carpeta de webapp los archivos de View1.controller.js, View1.view.xml y manifest.json (en caso de que a la vista se le allá asignado un nombre distinto al predeterminado, los archivos tendrán ese nombre en lugar de View1), estos archivos serán los que se modificaran durante el ejercicio.
  
  
